@@ -1,0 +1,15 @@
+<div class="">
+  <h6 class="col-sm-12">Authenticate Details</h6>
+  <div class="col-sm-12">
+      <!-- <button class="btn btn-primary" (click)="getFoo()" type="submit">New Foo</button>         -->
+      <button class="btn btn-warning btn-sm" (click)="getPrincipal()" type="button">auth</button>        
+  </div>
+
+  <hr/>
+  <div *ngIf="auth; else noData">
+    {{ auth | json }}
+  </div>
+  <ng-template #noData>
+    user principal infor:
+  </ng-template>
+</div>
